@@ -71,7 +71,6 @@
 #import <HexFiend/HFTextDividerRepresenter.h>
 #import <HexFiend/HFRepresenterHexTextView.h>
 #import <HexFiend/HFColorRange.h>
-#import <HexFiend/HFRangeWrapper.h>
 
 /* The following is all for Doxygen */
 
