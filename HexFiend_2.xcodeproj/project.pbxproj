@@ -143,7 +143,7 @@
 		A5CEA42F20D6316600BCA488 /* HFCustomEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A5CEA42D20D6316600BCA488 /* HFCustomEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5CEA43020D6316600BCA488 /* HFCustomEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CEA42E20D6316600BCA488 /* HFCustomEncoding.m */; };
 		A5D8C8F220E9E58000103D60 /* libz.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D8C8F120E9E58000103D60 /* libz.1.tbd */; };
-		A5ED2A85200BD8F0004AD7A4 /* HFColorRange.h in Headers */ = {isa = PBXBuildFile; fileRef = A5ED2A83200BD8F0004AD7A4 /* HFColorRange.h */; };
+		A5ED2A85200BD8F0004AD7A4 /* HFColorRange.h in Headers */ = {isa = PBXBuildFile; fileRef = A5ED2A83200BD8F0004AD7A4 /* HFColorRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5ED2A86200BD8F0004AD7A4 /* HFColorRange.m in Sources */ = {isa = PBXBuildFile; fileRef = A5ED2A84200BD8F0004AD7A4 /* HFColorRange.m */; };
 		A5EF28CA20F187B700CA7B39 /* HexFiend.h in Headers */ = {isa = PBXBuildFile; fileRef = D01E7BEF0CDC564B00943F9E /* HexFiend.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5EF28CB20F187B700CA7B39 /* HFByteArrayEditScript.h in Headers */ = {isa = PBXBuildFile; fileRef = D0A1F2EB11439B9D008BB3BA /* HFByteArrayEditScript.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1535,7 +1535,6 @@
 				A5FCE63A25351DA600043F1D /* HFFrameworkPrefix.h in Headers */,
 				D082AC910CDEBD5300554EB7 /* HFByteArray_Internal.h in Headers */,
 				D0CDB7540CE735590084926B /* HFRepresenterStringEncodingTextView.h in Headers */,
-				A5ED2A85200BD8F0004AD7A4 /* HFColorRange.h in Headers */,
 				A5CEA41C20D5DF4400BCA488 /* HFStringEncoding.h in Headers */,
 				D0CDB77D0CE737130084926B /* HFStringEncodingTextRepresenter.h in Headers */,
 				D00EBA730CE866D50020E2D7 /* HFVerticalScrollerRepresenter.h in Headers */,
@@ -1562,6 +1561,7 @@
 				D0370A3F0D68307A00B3A8C6 /* HFSharedMemoryByteSlice.h in Headers */,
 				A582748521DC83A100008DBE /* HFColumnRepresenter.h in Headers */,
 				A568D70C2B43D22900159993 /* HFTextDividerRepresenter.h in Headers */,
+				A5ED2A85200BD8F0004AD7A4 /* HFColorRange.h in Headers */,
 				D019B9010D83FEB3005789AA /* HFByteSliceFileOperation.h in Headers */,
 				D019B9550D840FE8005789AA /* HFObjectGraph.h in Headers */,
 				A572614D21D9AA7600970A0E /* HFEncodingManager.h in Headers */,
@@ -3280,9 +3280,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 6ZSJ45TPYC;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_MODULE_VERIFIER = YES;
@@ -3300,7 +3301,7 @@
 					"-fblocks",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ridiculousfish.HexFiend-Framework";
+				PRODUCT_BUNDLE_IDENTIFIER = freshbits.HexFiend;
 				PRODUCT_NAME = HexFiend;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -3456,9 +3457,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 6ZSJ45TPYC;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_MODULE_VERIFIER = YES;
@@ -3476,7 +3478,7 @@
 					"-fblocks",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ridiculousfish.HexFiend-Framework";
+				PRODUCT_BUNDLE_IDENTIFIER = freshbits.HexFiend;
 				PRODUCT_NAME = HexFiend;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -3630,9 +3632,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 6ZSJ45TPYC;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_MODULE_VERIFIER = YES;
@@ -3650,7 +3653,7 @@
 					"-fblocks",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ridiculousfish.HexFiend-Framework";
+				PRODUCT_BUNDLE_IDENTIFIER = freshbits.HexFiend;
 				PRODUCT_NAME = HexFiend;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -3820,9 +3823,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 6ZSJ45TPYC;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_MODULE_VERIFIER = YES;
@@ -3840,7 +3844,7 @@
 					"-fblocks",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ridiculousfish.HexFiend-Framework";
+				PRODUCT_BUNDLE_IDENTIFIER = freshbits.HexFiend;
 				PRODUCT_NAME = HexFiend;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -4024,9 +4028,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 6ZSJ45TPYC;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_MODULE_VERIFIER = YES;
@@ -4044,7 +4049,7 @@
 					"-fblocks",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ridiculousfish.HexFiend-Framework";
+				PRODUCT_BUNDLE_IDENTIFIER = freshbits.HexFiend;
 				PRODUCT_NAME = HexFiend;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -4238,9 +4243,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 6ZSJ45TPYC;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_MODULE_VERIFIER = YES;
@@ -4258,7 +4264,7 @@
 					"-fblocks",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ridiculousfish.HexFiend-Framework";
+				PRODUCT_BUNDLE_IDENTIFIER = freshbits.HexFiend;
 				PRODUCT_NAME = HexFiend;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -4379,9 +4385,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 6ZSJ45TPYC;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_MODULE_VERIFIER = YES;
@@ -4399,7 +4406,7 @@
 					"-fblocks",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ridiculousfish.HexFiend-Framework";
+				PRODUCT_BUNDLE_IDENTIFIER = freshbits.HexFiend;
 				PRODUCT_NAME = HexFiend;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
